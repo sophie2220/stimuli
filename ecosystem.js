@@ -1,3 +1,5 @@
+// variable ecosystem_data is defined in ecosystem_data.js
+
 function rm(v, item) {if (v.indexOf(item) > -1) { v.splice(v.indexOf(item), 1); }}
 
 Array.prototype.unique = function() {
