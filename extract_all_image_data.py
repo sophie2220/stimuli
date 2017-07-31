@@ -1,5 +1,3 @@
-#! /usr/bin/env python
-
 from xml.dom import minidom
 import sys
 
@@ -54,11 +52,67 @@ full_file_string += '\t"flower":{'
 
 full_file_string += '\n'
 
+D_flower = read_image_file("flower")
+
+full_file_string += D_flower
+
+full_file_string += '\n'
+
 full_file_string += '\t\t"colors": {"target1":col1, "target3":col5, "target2":col2, "stem":col1, "flowerfront":col3, "flowerback":Ecosystem.darken(col3), "center":col4}'
 
 full_file_string += '\n'
 
 full_file_string += '\t},'
+
+full_file_string += '\n'
+
+full_file_string += '\t"bug":{'
+
+full_file_string += '\n'
+
+D_bug = read_image_file("bug")
+
+full_file_string += D_bug
+
+full_file_string += '\n'
+
+full_file_string += '\t\t"colors": {"legs":col1, "head":col2, "body":col3, "pupils":black, "eyes":white, "target1":col4, "target2":col5}'
+
+full_file_string += '\n'
+
+full_file_string += '\t},'
+
+full_file_string += '\n'
+
+full_file_string += '\t"bird":{'
+
+full_file_string += '\n'
+
+D_bird = read_image_file("bird")
+
+full_file_string += D_bird
+
+full_file_string += '\n'
+
+full_file_string += '\t\t"colors": {"target1":col1, "target2":col1, "beak":yellow, "legs":col2, "body":col2, "head":col2, "wing":col3, "eye":black, "eye2":black, "eyebkg":white, "eyebkg2":white, "feet":gray}'
+
+full_file_string += '\n'
+
+full_file_string += '\t},'
+
+full_file_string += '\n'
+
+full_file_string += '\t"tree":{'
+
+full_file_string += '\n'
+
+D_tree = read_image_file("tree")
+
+full_file_string += D_tree
+
+full_file_string += '\n'
+
+full_file_string += '\t\t"colors":{"target1":col1, "target2": col2, "trunk":col3, "branches":null}'
 
 full_file_string += '\n'
 
